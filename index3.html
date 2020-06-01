@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr;*/
+            grid-template-columns: repeat(2, 2fr 1fr);
+            grid-gap: 1em;
+            grid-auto-rows: minmax(50px, auto);
+
+        }
+
+        .grid-container>div {
+            padding: 1em;
+            background-color: pink;
+        }
+
+        .grid-container>div:nth-child(even) {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <dic class="grid-container">
+        <div>1 anu</div>
+        <div>2 tulasi</div>
+        <div>3 neem</div>
+        <div>4 pooja</div>
+        <div>5 karthika</div>
+        </div>
+</body>
+
+</html>
